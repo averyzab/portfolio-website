@@ -56,9 +56,16 @@ a:active {
 }
 
 .button:hover,
-:focus {
+.button:focus {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #918ba7;
+  text-transform: uppercase;
+  border: 2px solid #44443f;
 }
 
 .button:visited {
@@ -71,15 +78,8 @@ a:active {
   border-bottom: 2px solid #44443f; /* width of the border, type, color */
 }
 
-.button.contact {
-  background-color: transparent;
-  color: #918ba7;
-  text-transform: uppercase;
-  border: 2px solid #44443f;
-}
-
 .button.contact:hover,
-:focus {
+.button.contact:focus {
   background-color: #44443f;
   color: 3918ba7;
 }
