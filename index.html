@@ -7,19 +7,20 @@
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
-    />
+      />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
       rel="stylesheet"
-    />
+      />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header>
-      <div>
-        <img src="img/logo.png" alt="AveryZabudsky" media="(max-width:767px)" />
-        <a href="#">AveryZ</a>
+      <div class="container">
+        <img
+          src="img/logo.png" alt="AveryZabudsky" class="logo"
+          media="(max-width:767px)" />
         <nav>
           <ul>
             <li><a href="index.html" class="my-link">Work</a></li>
@@ -30,56 +31,67 @@
       </div>
     </header>
 
-    <div>
-      <h1>Hi! My name is Avery Zabudsky.</h1>
-      <span>
-        <h2>
-          I'm a User-Interface and Brand Identity Designer in Ontario, Canada.
-        </h2>
-      </span>
-    </div>
+    <div id="hero">
+      <div class="container">
+        <h1>Hi! My name is Avery Zabudsky.</h1>
+        <span>
+          <h2>
+            I'm a User-Interface and Brand Identity Designer in Ontario,
+            Canada.
+          </h2>
+        </span>
+      </div>
 
-    <div>
       <div>
-        <picture>
-          <source
-            srcset="http://via.placeholder.com/600x400"
-            media="(max-width:767px)"
-          />
-          <img src="img/house-shows/branding-guidelines-1.jpg" alt="My Image" />
-        </picture>
-      </div>
-      <div>
-        <h3><a href="house-shows.html">House Shows</a></h3>
-        <p>
-          An interface that allows artists to post invitations to local shows
-          they are hosting at small venues. Users can then purchase tickets to
-          these events through the interface. The design is kept simple and
-          functional so it is user-friendly to a large variety of audiences.
-        </p>
-        <p>
-          Tools and Skills used: Sketch, Angle, Usability Tests, InVision,
-          Mobile-first approach
-        </p>
-        <a href="house-shows.html" class="button">Read more</a>
-      </div>
-    </div>
+        <div class="container">
+          <picture>
+            <source
+              srcset="http://via.placeholder.com/600x400"
+              media="(max-width:767px)"
+              />
+            <img src="img/house-shows/branding-guidelines-1.jpg" alt="My
+              Image" />
+          </picture>
+        </div>
+        <div id="work">
+          <div class="container">
+            <h2><a href="house-shows.html">House Shows</a></h2>
+            <div class="row">
+              <p>
+                An interface that allows artists to post invitations to local
+                shows
+                they are hosting at small venues. Users can then purchase
+                tickets
+                to
+                these events through the interface. The design is kept simple
+                and
+                functional so it is user-friendly to a large variety of
+                audiences.
+              </p>
+              <p>
+                Tools and Skills used: Sketch, Angle, Usability Tests, InVision,
+                Mobile-first approach
+              </p>
+              <a href="house-shows.html" class="button">Read more</a>
+            </div>
+          </div>
 
-    <footer id="contact">
-      <div>
-        <h2>Get in Touch</h2>
-        <p>Interested in my work? Want to discuss opportunities?</p>
-        <p>
-          Get in touch via
-          <a href="tel:+12896815592"> Phone: 289-681-5592 </a>
-          or
-          <a href="mailto:averyzabudsky@gmail.com" class="button contact">Send me an email</a>
-          </a>
-        </p>
-      </div>
-      <div>
-        <p>Copyright Avery Zabudsky 2020</p>
-      </div>
-    </footer>
-  </body>
-</html>
+          <footer id="contact">
+            <div class="container">
+              <h3>Get in Touch</h3>
+              <p>Interested in my work? Want to discuss opportunities?</p>
+              <p>
+                Get in touch via
+                <a href="tel:+12896815592"> Phone: 289-681-5592 </a>
+                or
+                <a href="mailto:averyzabudsky@gmail.com" class="button contact">Send
+                  me an email</a>
+              </a>
+            </p>
+          </div>
+          <div class="container">
+            <p>Copyright Avery Zabudsky 2020</p>
+          </div>
+        </footer>
+      </body>
+    </html>

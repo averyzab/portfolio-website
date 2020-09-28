@@ -1,3 +1,16 @@
+header {
+  background-color: #cdd4e0d0;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 5px 13px 0px rgba(50, 50, 50, 0.75);
+  position: fixed;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #eae8e6;
   font-family: "Montserrat, sans-serif;";
@@ -32,7 +45,7 @@ a:focus {
 }
 a:visited {
   /* visited link */
-  color: #b24458;
+  color: #0e5042;
 }
 a:active {
   /* selected link */
@@ -82,4 +95,48 @@ a:active {
 .button.contact:focus {
   background-color: #44443f;
   color: 3918ba7;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /*25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+  text-align: center; /* Centers text*/
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #44443f;
+}
+
+#hero {
+  background-color: #cdd4e0d0;
+}
+
+main {
+  padding-top: 320px;
 }
