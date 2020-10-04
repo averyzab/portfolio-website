@@ -101,7 +101,8 @@ a:active {
 /* Layout styling */
 
 .container {
-  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .row {
@@ -146,12 +147,6 @@ nav > ul > li > a {
 
 main {
   padding-top: 320px;
-}
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @keyframes color-change {
@@ -204,19 +199,23 @@ main {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
 .row::after {
   content: "";
   clear: both;
 }
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
 .col-sm-12 {
   width: 100%;
 }
-.a-block {
-  border: 2px solid black;
+
+/* just for demonstration purposes */
+.a-red-block {
+  border: 2px solid red;
 }
 
 /* Medium Devices (640px and larger)*/
@@ -232,16 +231,6 @@ main {
   }
   .col-md-6 {
     width: 50%;
-  }
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
-
-  .row::after {
-    content: "";
-    clear: both;
-    display: tabel;
   }
 }
 
