@@ -16,6 +16,8 @@ h1 {
 h2 {
   font-size: 2em;
   font-weight: 500;
+  margin: 0;
+  line-height: 27px;
 }
 img {
   width: 100%;
@@ -98,12 +100,11 @@ a:active {
   text-align: center; /* Centers text*/
 }
 .logo {
-  max-width: 250px;
+  max-width: 200px;
 }
 header {
   background-color: #cdd4e0d0;
-  text-align: center;
-  padding: 10px 0;
+  padding: 0.67em 0;
   box-shadow: 0px 5px 13px 0px rgba(50, 50, 50, 0.75);
   position: fixed;
   width: 100%;
@@ -111,16 +112,41 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-nav > ul > li {
-  display: inline-block;
-}
+
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #44443f;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgbs (255, 127, 80, 0.5);
+}
+
 #hero {
   background-color: #cdd4e0d0;
   text-align: center;
@@ -187,15 +213,15 @@ main {
 .col-sm-12 {
   width: 100%;
 }
-/* just for demonstration purposes */
-.a-red-block {
-  border: 2px solid red;
-}
+
 /* Medium Devices (640px and larger)*/
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+  .logo {
+    min-width: 250px;
   }
   nav {
     width: auto;
@@ -204,6 +230,20 @@ main {
   }
   .col-md-6 {
     width: 50%;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+    min-width: 641px;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+    padding: 0 0 10px;
   }
 }
 /* Large Devices (1024px or larger)*/
