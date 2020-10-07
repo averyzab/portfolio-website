@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #eae8e6;
+  background-color: #cdd4e0d0;
   font-family: "Montserrat, sans-serif;";
   font-size: 16px;
   font-weight: 300;
@@ -116,6 +116,7 @@ nav > ul {
 }
 
 nav > ul > li > a {
+  display: inline-block;
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -222,20 +223,32 @@ main {
   }
   .logo {
     min-width: 250px;
+    padding-left: 20px;
   }
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+    font-weight: 700px;
+  }
   .col-md-6 {
     width: 50%;
   }
+
   nav > ul {
     margin: 1em 0;
+    font-size: 1em;
   }
+
   nav > ul > li {
     display: inline-block;
+    position: relative;
+    font-size: 1em;
     min-width: 641px;
   }
   .navtoggle li:not(:last-child) {
@@ -244,6 +257,9 @@ main {
   .navtoggle li:last-child {
     display: none;
     padding: 0 0 10px;
+  }
+  .big-font {
+    font-size: 30px;
   }
 }
 /* Large Devices (1024px or larger)*/
@@ -256,6 +272,10 @@ main {
   }
   .col-lg-7 {
     width: 60%;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
   }
 }
 /* X-large Devices (1440px and larger)*/
