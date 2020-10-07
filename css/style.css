@@ -101,6 +101,7 @@ a:active {
 }
 .logo {
   max-width: 200px;
+  padding-left: 20px;
 }
 header {
   background-color: #cdd4e0d0;
@@ -136,6 +137,7 @@ nav > ul > li > a {
   right: 0;
   top: 2px;
   font-size: 20px;
+  padding-right: 20px;
 }
 
 .navtoggle.responsive nav {
