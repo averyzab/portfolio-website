@@ -150,6 +150,21 @@ nav > ul > li > a {
   border-top: 1px solid rgbs (255, 127, 80, 0.5);
 }
 
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 #hero {
   background-color: #cdd4e0d0;
   text-align: center;
