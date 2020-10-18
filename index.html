@@ -1,138 +1,112 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>AveryZabudsky User Interface and Brand Identity Designer</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script
-      src="https://kit.fontawesome.com/9de7f8a581.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- header navigation start -->
-    <header>
-      <div class="container">
-        <div class="navtoggle" id="myNavtoggle">
-          <img
-            src="img/logo.png"
-            alt="AveryZabudsky"
-            class="logo"
-            media="(max-width:767px)"
-          />
-          <nav>
-            <div class="flex-container">
-              <ul class="big-font no-bullets">
-                <li><a href="index.html" class="my-link">Work</a></li>
-                <li><a href="about.html" class="my-link">About</a></li>
-                <li>
-                  <a href="#contact" onclick="menuToggle()" class="my-link"
-                    >Contact</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="javascript:void(0);"
-                    class="icon"
-                    onclick="menuToggle()"
-                  >
-                    <i class="fas fa-bars"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <!-- header navigation end -->
-    ​
-    <!-- hero start -->
-    <div id="hero">
-      <div class="container">
-        <h1>Hi! My name is Avery Zabudsky.</h1>
-        <span>
-          <h2>
-            I'm a User-Interface and Brand Identity Designer in Ontario, Canada.
-          </h2>
-        </span>
+
+<head>
+  <meta charset="utf-8" />
+  <title>AveryZabudsky User Interface and Brand Identity Designer</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://kit.fontawesome.com/9de7f8a581.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- header navigation start -->
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <img src="img/logo.png" alt="AveryZabudsky" class="logo" media="(max-width:767px)" />
+        <nav>
+          <div class="flex-container">
+            <ul class="big-font no-bullets">
+              <li><a href="index.html" class="my-link">Work</a></li>
+              <li><a href="about.html" class="my-link">About</a></li>
+              <li>
+                <a href="#contact" onclick="menuToggle()" class="my-link">Contact</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                  <i class="fas fa-bars"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
-    <!-- hero end -->
-    ​
-    <!-- work start -->
-    <div id="work">
-      <div class="container">
-        <!-- row start -->
-        <div class="row">
-          <!-- column left -->
-          <div class="column col-sm-12 col-md-6 col-lg-7">
-            <picture>
-              <source
-                srcset="http://via.placeholder.com/600x400"
-                media="(max-width:767px)"
-              />
-              <img
-                src="img/house-shows/branding-guidelines-1.jpg"
-                alt="My Image"
-              />
-            </picture>
-          </div>
-          <!-- column left end -->
+  </header>
+  <!-- header navigation end -->
+  ​
+  <!-- hero start -->
+  <div id="hero">
+    <div class="container">
+      <h1>Hi! My name is Avery Zabudsky.</h1>
+      <span>
+        <h2>
+          I'm a User-Interface and Brand Identity Designer in Ontario, Canada.
+        </h2>
+      </span>
+    </div>
+  </div>
+  <!-- hero end -->
+  ​
+  <!-- work start -->
+  <div id="work">
+    <div class="container">
+      <!-- row start -->
+      <div class="row">
+        <!-- column left -->
+        <div class="column col-sm-12 col-md-6 col-lg-7">
+          <picture>
+            <source srcset="img/house-shows/branding-guidelines-1.jpg" media="(max-width:767px)" />
+            <img src="img/house-shows/branding-guidelines-1.jpg" alt="My Image" />
+          </picture>
+        </div>
+        <!-- column left end -->
+        ​
+        <!-- column right -->
+        <div class="column col-sm-12 col-md-6 col-lg-5">
+          <h2><a href="house-shows.html">House Shows</a></h2>
+          <p>
+            An interface that allows artists to post invitations to local
+            shows they are hosting at small venues. Users can then purchase
+            tickets to these events through the interface. The design is kept
+            simple and functional so it is user-friendly to a large variety of
+            audiences.
+          </p>
+          <p>
+            Tools and Skills used: Sketch, Angle, Usability Tests, InVision,
+            Mobile-first approach
+          </p>
+          <a href="house-shows.html" class="button">Read more</a>
+        </div>
+        <!-- column right end -->
+      </div>
+      <!-- row end -->
+    </div>
+  </div>
+  <!-- work end -->
+  ​
+  <footer id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>Get in Touch</h3>
+          <p>Interested in my work? Want to discuss opportunities?</p>
+          <p>
+            Get in touch via
+            <a href="tel:+12896815592"> Phone: 289-681-5592 </a>
+            or
+            <a href="mailto:averyzabudsky@gmail.com" class="button contact">Send me an email</a>
+          </p>
           ​
-          <!-- column right -->
-          <div class="column col-sm-12 col-md-6 col-lg-5">
-            <h2><a href="house-shows.html">House Shows</a></h2>
-            <p>
-              An interface that allows artists to post invitations to local
-              shows they are hosting at small venues. Users can then purchase
-              tickets to these events through the interface. The design is kept
-              simple and functional so it is user-friendly to a large variety of
-              audiences.
-            </p>
-            <p>
-              Tools and Skills used: Sketch, Angle, Usability Tests, InVision,
-              Mobile-first approach
-            </p>
-            <a href="house-shows.html" class="button">Read more</a>
-          </div>
-          <!-- column right end -->
+          <p>Copyright Avery Zabudsky 2020</p>
         </div>
-        <!-- row end -->
       </div>
     </div>
-    <!-- work end -->
-    ​
-    <footer id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h3>Get in Touch</h3>
-            <p>Interested in my work? Want to discuss opportunities?</p>
-            <p>
-              Get in touch via
-              <a href="tel:+12896815592"> Phone: 289-681-5592 </a>
-              or
-              <a href="mailto:averyzabudsky@gmail.com" class="button contact"
-                >Send me an email</a
-              >
-            </p>
-            ​
-            <p>Copyright Avery Zabudsky 2020</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="js/scripts.js"></script>
-  </body>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>
